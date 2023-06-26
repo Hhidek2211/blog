@@ -7,8 +7,9 @@ use App\Models\Post;
 
 class PostController extends Controller
 {
-        public function index(Post $post)//インポートしたPostをインスタンス化して$postとして使用。
+    public function index(Post $post)//インポートしたPostをインスタンス化して$postとして使用。
     {
-         return view('Posts.Index') -> with(['posts' => $post -> getByLimit()]);
+         return view('Posts.Index') -> with(['posts' => $post -> getPaginateByLimit()]);
     }
+    
 }
