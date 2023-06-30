@@ -15,7 +15,11 @@
         <div class="Posts">
           @foreach ($posts as $post)
             <div class="Post">
-                <h2 class="Title">{{ $post -> title }}</h2>
+                <h2 class="Title">
+                    <a href="/posts/{{ $post -> id}}">
+                    {{ $post -> title }}
+                    </a>
+                </h2>
                 <p class="body">{{ $post -> body }}</p>
             </div>
           @endforeach

@@ -12,4 +12,9 @@ class PostController extends Controller
          return view('Posts.Index') -> with(['posts' => $post -> getPaginateByLimit()]);
     }
     
+    public function show(Post $post)
+    {
+        return view('Posts.show') -> with(['post' => $post]);
+    }
+    
 }
