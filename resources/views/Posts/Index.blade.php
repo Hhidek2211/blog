@@ -27,6 +27,8 @@
         <div class='paginate'>
             {{ $posts -> links() }}
         </div>
+        <a href="/posts/create">記事作成</a>
+        
     </body>
     
     
