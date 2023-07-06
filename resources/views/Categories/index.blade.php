@@ -33,7 +33,7 @@
         <div class='paginate'>
             {{ $posts -> links() }}
         </div>
-        <a href="/posts/create">記事作成</a>
+        <a href="/">戻る</a>
         
         <script>
             function deletePost(id) {
