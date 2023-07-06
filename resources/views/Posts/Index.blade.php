@@ -9,7 +9,9 @@
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
     </head>
-    
+
+<x-app-layout>
+    <x-slot name="header">Index</x-slot>
     <body>
         <h1>Blog Name</h1>
         <div class="Posts">
@@ -35,6 +37,8 @@
         </div>
         <a href="/posts/create">記事作成</a>
         
+        <br>
+        <p>ログインユーザー：{{ Auth::user()->name }}</p>
         <script>
             function deletePost(id) {
                 'use strict'
@@ -46,6 +50,6 @@
         </script>
         
     </body>
-    
+</x-app-layout>
     
 </html>
