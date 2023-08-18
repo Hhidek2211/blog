@@ -32,7 +32,7 @@
         <div class='paginate'>
             {{ $posts -> links() }}
         </div>
-        <a href="/posts/create">記事作成</a>
+        <a href="/posts/create">記事の新規作成</a>
         
         <script>
             function deletePost(id) {
